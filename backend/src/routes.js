@@ -1,5 +1,7 @@
 const routes = require('express').Router();
 
-routes.get('/ping', (req, res) => res.send('pong'));
+const ping = require('./controllers/Ping');
+
+routes.get('/ping', ping.index);
 
 module.exports = routes;
