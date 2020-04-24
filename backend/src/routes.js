@@ -1,10 +1,22 @@
 const routes = require('express').Router();
 
-const ping = require('./controllers/Ping');
-const users = require('./controllers/Users');
+const session = require('./controllers/SessionController');
+const ping = require('./controllers/PingController');
+const ong = require('./controllers/OngController');
+const incident = require('./controllers/IncidentController');
+const profile = require('./controllers/ProfileController');
+
+routes.post('/sessions', session.store);
 
 routes.get('/ping', ping.index);
 
-routes.post('/users', users.store);
+routes.post('/ongs', ong.store);
+routes.get('/ongs', ong.index);
+
+routes.post('/incidents', incident.store);
+routes.get('/incidents', incident.index);
+routes.delete('/incidents/:id', incident.destroy);
+
+routes.get('/profile', profile.index);
 
 module.exports = routes;
