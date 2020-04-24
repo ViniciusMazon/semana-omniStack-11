@@ -1,8 +1,6 @@
 #BACK
 /backend/node_modules
 /backend/.env
-/node_modules
-
 
 #FRONT
 /frontend/node_modules
