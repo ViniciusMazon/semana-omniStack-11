@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "HelloWorld",
-    "slug": "mobile",
+    "name": "Be The Hero",
+    "slug": "bethehero",
     "platforms": [
       "ios",
       "android",
@@ -13,7 +13,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#E02041"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
