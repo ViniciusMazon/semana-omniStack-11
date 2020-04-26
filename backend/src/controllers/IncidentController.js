@@ -5,7 +5,7 @@ class IncidentController {
 
   async store(req, res) {
     const { title, description, value } = req.body;
-    const ong_id = req.headers.authoziration;
+    const ong_id = req.headers.authorization;
 
     const [id] = await connection('incidents').insert({
       title,
@@ -43,7 +43,7 @@ class IncidentController {
   async destroy(req, res) {
 
     const { id } = req.params;
-    const ong_id = req.headers.authoziration;
+    const ong_id = req.headers.authorization;
 
     const incident = await connection('incidents')
       .where('id', id)
