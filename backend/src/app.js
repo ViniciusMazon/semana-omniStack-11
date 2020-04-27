@@ -9,4 +9,4 @@ app.use(express.json());
 app.use(require('./routes'));
 app.use(errors());
 
-app.listen(process.env.PORT);
+module.exports = app;
