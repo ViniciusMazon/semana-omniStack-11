@@ -11,7 +11,7 @@ routes.post('/sessions', celebrate({
   [Segments.BODY]: Joi.object().keys({
     id: Joi.string().required()
   })
-}),session.store);
+}),session.create);
 
 routes.post('/ongs', celebrate({
   [Segments.BODY]: Joi.object().keys({
