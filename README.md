@@ -4,23 +4,15 @@
 	<br>
   <img src="readme/mobile.gif" alt="Be The Hero mobile" height="600">
   <img src="readme/web.gif" alt="Be The Hero web" height="600">
-<a href="#about"></a
 </div>
 
 [💡 Sobre o projeto](#about)
-<br>
 [🛸 Tecnologias](#techs)
-<br>
 [🧪 Minhas alterações](#my-changes)
-<br>
 [⚙️ Como utilizar](#quick-start)
-<br>
 [🧩 Variáveis de ambiente](#vars)
-<br>
 [🤖 Scripts](#scripts)
-<br>
 [🖖🏻 Como contribuir](#contribute)
-<br>
 [📝 License](#license)
 
 <div id='about'/>  
