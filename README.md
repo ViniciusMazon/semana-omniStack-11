@@ -1,20 +1,30 @@
-![logo](./readme/logo.png)
-
+<div align="center">
+	<img src="readme/logo.png" alt="Be The Hero logo" height="160">
+	<br>
+	<br>
+</div>
 ------
-![mobile](./readme/mobile.gif)
-![web](./readme/web.gif)
+<img src="readme/mobile.gif" alt="Be The Hero mobile" height="600">
+<img src="readme/web.gif" alt="Be The Hero web" height="900">
 
+# Índice
+[💡 Sobre o projeto](#about)
+[🛸 Tecnologias](#techs)
+[🧪 Minhas alterações](#my-changes)
+[⚙️ Como utilizar](#quick-start)
+[🧩 Variáveis de ambiente](#vars)
+[🤖 Scripts](#scripts)
+[🖖🏻 Como contribuir](#contribute)
+[📝 License](#license)
 
-
-[TOC]
-
+<div id='about'/>  
 # 💡 Sobre o projeto
 
 Be The Hero é uma plataforma para aproximar ONGs de pessoas que estão dispostas a fazer o bem e contribuir financeiramente para a solução de casos.
 
 Desenvolvido durante a **Semana OmniStack 11.0**, créditos a [Rocketseat 🚀
 ](https://github.com/Rocketseat)
-
+<div id='techs'/>  
 # 🛸 Tecnologias
 
 * Node.js
@@ -26,13 +36,13 @@ Desenvolvido durante a **Semana OmniStack 11.0**, créditos a [Rocketseat 🚀
 * Expo
 
   
-
+<div id='my-changes'/>  
 # 🧪 Minhas alterações
 
 ...
 
 
-
+<div id='quick-start'/>  
 # ⚙️ Como utilizar
 
 Clone o repositório:
@@ -138,15 +148,14 @@ yarn test
 ```
 
 
-
+<div id='vars'/> 
 # 🧩 Variáveis de ambiente
 
 **Backend**
 
 - `PORT`: Selecione a porta em que deseja rodar a API
 
-
-
+<div id='scripts'/> 
 # 🤖 Scripts
 
 **Backend:**
@@ -162,8 +171,7 @@ yarn test
 
 - `start`: Roda a aplicação
 
-
-
+<div id='contribute'/> 
 # 🖖🏻 Como contribuir
 
 - Faça um fork desse repositório;
@@ -175,7 +183,7 @@ yarn test
 Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
 
 
-
+<div id='license'/> 
 # 📝 License
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](#) para mais detalhes.
