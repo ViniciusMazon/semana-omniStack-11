@@ -1,5 +1,5 @@
-const connection = require('../database/connection');
 
+const connection = require('../database/connection');
 class SessionController {
 
   async store(req, res) {
