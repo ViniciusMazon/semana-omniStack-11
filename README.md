@@ -163,7 +163,6 @@ yarn test
 
 - `PORT`: Selecione a porta em que deseja rodar a API
 
-<div id='scripts'/> 
 # 🤖 Scripts
 
 **Backend:**
@@ -194,5 +193,5 @@ Depois que o merge da sua pull request for feito, você pode deletar a sua branc
 
 # 📝 License
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](#) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
