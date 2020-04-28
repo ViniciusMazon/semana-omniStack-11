@@ -1,28 +1,39 @@
 <div align="center">
 	<img src="readme/logo.png" alt="Be The Hero logo" height="160">
-	<br>
-	<br>
+</div>
+
+<div align="center">
   <img src="readme/mobile.gif" alt="Be The Hero mobile" height="600">
   <img src="readme/web.gif" alt="Be The Hero web" height="600">
 </div>
 
-[💡 Sobre o projeto](#about)
-[🛸 Tecnologias](#techs)
-[🧪 Minhas alterações](#my-changes)
-[⚙️ Como utilizar](#quick-start)
-[🧩 Variáveis de ambiente](#vars)
-[🤖 Scripts](#scripts)
-[🖖🏻 Como contribuir](#contribute)
-[📝 License](#license)
+<p>
+  <a href="#-sobre-o-projeto">💡 Sobre o projeto</a>
+  <br/>
+  <a href="#-tecnologias">🛸 Tecnologias</a>
+   <br/>
+  <a href="#-minhas-alterações">🧪 Minhas alterações</a>
+   <br/>
+  <a href="#-como-utilizar">⚙️ Como utilizar</a>
+   <br/>
+  <a href="#-variáveis-de-ambiente">🧩 Variáveis de ambiente</a>
+   <br/>
+  <a href="#-scripts">🤖 Scripts</a>
+   <br/>
+  <a href="#-como-contribuir">🖖🏻 Como contribuir</a>
+   <br/>
+  <a href="#-license">📝 License</a>
+</p>
 
-<div id='about'/>  
+
+
 # 💡 Sobre o projeto
 
 Be The Hero é uma plataforma para aproximar ONGs de pessoas que estão dispostas a fazer o bem e contribuir financeiramente para a solução de casos.
 
 Desenvolvido durante a **Semana OmniStack 11.0**, créditos a [Rocketseat 🚀
 ](https://github.com/Rocketseat)
-<div id='techs'/>  
+
 # 🛸 Tecnologias
 
 * Node.js
@@ -34,13 +45,13 @@ Desenvolvido durante a **Semana OmniStack 11.0**, créditos a [Rocketseat 🚀
 * Expo
 
   
-<div id='my-changes'/>  
+
 # 🧪 Minhas alterações
 
 ...
 
 
-<div id='quick-start'/>  
+
 # ⚙️ Como utilizar
 
 Clone o repositório:
@@ -146,7 +157,6 @@ yarn test
 ```
 
 
-<div id='vars'/> 
 # 🧩 Variáveis de ambiente
 
 **Backend**
@@ -169,7 +179,7 @@ yarn test
 
 - `start`: Roda a aplicação
 
-<div id='contribute'/> 
+
 # 🖖🏻 Como contribuir
 
 - Faça um fork desse repositório;
@@ -181,7 +191,7 @@ yarn test
 Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
 
 
-<div id='license'/> 
+
 # 📝 License
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](#) para mais detalhes.
