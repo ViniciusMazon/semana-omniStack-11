@@ -1,8 +1,8 @@
-![logo](.\readme\logo.png)
+![logo](readme\logo.png)
 
 ------
-![mobile](.\readme\mobile.gif)
-![web](\.readme\web.gif)
+![mobile](readme\mobile.gif)
+![web](readme\web.gif)
 
 
 
