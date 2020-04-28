@@ -4,10 +4,9 @@
 	<br>
   <img src="readme/mobile.gif" alt="Be The Hero mobile" height="600">
   <img src="readme/web.gif" alt="Be The Hero web" height="600">
+<a href="#about"></a
 </div>
 
-# Índice
-<br>
 [💡 Sobre o projeto](#about)
 <br>
 [🛸 Tecnologias](#techs)
@@ -23,7 +22,6 @@
 [🖖🏻 Como contribuir](#contribute)
 <br>
 [📝 License](#license)
-<br>
 
 <div id='about'/>  
 # 💡 Sobre o projeto
