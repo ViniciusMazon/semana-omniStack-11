@@ -1,8 +1,8 @@
-![logo](C:\Users\Vinicius Mazon\Documents\GitHub\semana-omniStack-11\readme\logo.png)
+![logo](.\readme\logo.png)
 
 ------
-![mobile](C:\Users\Vinicius Mazon\Documents\GitHub\semana-omniStack-11\readme\mobile.gif)
-![web](C:\Users\Vinicius Mazon\Documents\GitHub\semana-omniStack-11\readme\web.gif)
+![mobile](.\readme\mobile.gif)
+![web](\.readme\web.gif)
 
 
 
