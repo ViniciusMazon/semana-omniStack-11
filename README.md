@@ -2,20 +2,28 @@
 	<img src="readme/logo.png" alt="Be The Hero logo" height="160">
 	<br>
 	<br>
+  <img src="readme/mobile.gif" alt="Be The Hero mobile" height="600">
+  <img src="readme/web.gif" alt="Be The Hero web" height="600">
 </div>
-------
-<img src="readme/mobile.gif" alt="Be The Hero mobile" height="600">
-<img src="readme/web.gif" alt="Be The Hero web" height="900">
 
 # Índice
+<br>
 [💡 Sobre o projeto](#about)
+<br>
 [🛸 Tecnologias](#techs)
+<br>
 [🧪 Minhas alterações](#my-changes)
+<br>
 [⚙️ Como utilizar](#quick-start)
+<br>
 [🧩 Variáveis de ambiente](#vars)
+<br>
 [🤖 Scripts](#scripts)
+<br>
 [🖖🏻 Como contribuir](#contribute)
+<br>
 [📝 License](#license)
+<br>
 
 <div id='about'/>  
 # 💡 Sobre o projeto
