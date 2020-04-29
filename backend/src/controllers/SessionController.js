@@ -1,4 +1,4 @@
-const sessionModel = require('../models/session');
+const sessionModel = require('../models/Session');
 
 class SessionController {
 

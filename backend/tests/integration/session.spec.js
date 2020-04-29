@@ -13,27 +13,25 @@ describe('Session', () => {
     await connection.destroy();
   });
 
-
-
   it('should log in', async () => {
 
     const newOng = await request(app)
-    .post('/ongs')
-    .send({
-      name: "APAD",
-      email: "contato@apad.com.br",
-      whatsapp: "4700000000",
-      city: "Rio do Sul",
-      uf: "SC"
-    });
+      .post('/ongs')
+      .send({
+        name: "APAD",
+        email: "contato@apad.com.br",
+        whatsapp: "4700000000",
+        city: "Rio do Sul",
+        uf: "SC"
+      });
 
     const ongId = newOng.body.id;
 
     const response = await request(app)
-    .post('/sessions')
-    .send({
-      id: ongId
-    });
+      .post('/sessions')
+      .send({
+        id: ongId
+      });
 
     expect(response.body).toHaveProperty('name');
   });
