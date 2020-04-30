@@ -1,4 +1,4 @@
-const connection = require('../database/connection');
+const profileModel = require('../models/Profile');
 
 class ProfileController {
 
@@ -6,9 +6,7 @@ class ProfileController {
 
     const ong_id = req.headers.authorization;
 
-    const incidents = await connection('incidents')
-      .where('ong_id', ong_id)
-      .select('*');
+    const incidents = await profileModel.index(ong_id);
 
     return res.json(incidents);
   }
