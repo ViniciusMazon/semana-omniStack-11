@@ -1,17 +1,19 @@
-const routes = require('express').Router();
-const { celebrate, Segments, Joi } = require('celebrate');
+import { Router } from 'express';
+import { celebrate, Segments, Joi } from 'celebrate';
 
-const session = require('./controllers/SessionController');
-const ping = require('./controllers/PingController');
-const ong = require('./controllers/OngController');
-const incident = require('./controllers/IncidentController');
-const profile = require('./controllers/ProfileController');
+const routes = Router();
+
+import session from './controllers/SessionController';
+import ping from './controllers/PingController';
+import ong from './controllers/OngController';
+import incident from './controllers/IncidentController';
+import profile from './controllers/ProfileController';
 
 routes.post('/sessions', celebrate({
   [Segments.BODY]: Joi.object().keys({
     id: Joi.string().required()
   })
-}),session.create);
+}), session.create);
 
 routes.post('/ongs', celebrate({
   [Segments.BODY]: Joi.object().keys({
@@ -53,9 +55,8 @@ routes.get('/profile', celebrate({
   [Segments.HEADERS]: Joi.object({
     authorization: Joi.string().required()
   }).unknown()
-}),profile.index);
+}), profile.index);
 
 routes.get('/ping', ping.index);
 
-module.exports = routes;
-
+export default routes;

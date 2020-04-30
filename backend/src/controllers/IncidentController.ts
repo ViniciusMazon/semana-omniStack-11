@@ -1,8 +1,9 @@
-const incidentModel = require('../models/Incident');
+import {Request, Response} from 'express';
+import incidentModel from '../models/Incident';
 
 class IncidentController {
 
-  async create(req, res) {
+  async create(req: Request, res: Response) {
     const data = req.body;
     const ong_id = req.headers.authorization;
 
@@ -11,7 +12,7 @@ class IncidentController {
     return res.json({ id })
   }
 
-  async index(req, res) {
+  async index(req: Request, res: Response) {
 
     const { page = 1 } = req.query;
 
@@ -21,7 +22,7 @@ class IncidentController {
     return res.json(incidents);
   }
 
-  async delete(req, res) {
+  async delete(req: Request, res: Response) {
 
     const { id } = req.params;
     const ong_id = req.headers.authorization;
@@ -39,4 +40,4 @@ class IncidentController {
   }
 }
 
-module.exports = new IncidentController();
+export = new IncidentController();

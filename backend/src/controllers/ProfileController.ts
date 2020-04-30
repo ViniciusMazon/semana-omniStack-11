@@ -1,8 +1,9 @@
-const profileModel = require('../models/Profile');
+import { Request, Response } from 'express';
+import profileModel from '../models/Profile';
 
 class ProfileController {
 
-  async index(req, res) {
+  async index(req: Request, res: Response) {
 
     const ong_id = req.headers.authorization;
 
@@ -13,4 +14,4 @@ class ProfileController {
 
 }
 
-module.exports = new ProfileController();
+export = new ProfileController();
