@@ -33,12 +33,13 @@ routes.post('/incidents', celebrate({
     description: Joi.string().required(),
     value: Joi.number().required().positive()
   })
-}), incident.store);
+}), incident.create);
 routes.get('/incidents', celebrate({
   [Segments.QUERY]: Joi.object().keys({
     page: Joi.number()
   })
 }), incident.index);
+
 routes.delete('/incidents/:id', celebrate({
   [Segments.HEADERS]: Joi.object({
     authorization: Joi.string().required()
@@ -46,7 +47,7 @@ routes.delete('/incidents/:id', celebrate({
   [Segments.PARAMS]: Joi.object().keys({
     id: Joi.number().required()
   })
-}), incident.destroy);
+}), incident.delete);
 
 routes.get('/profile', celebrate({
   [Segments.HEADERS]: Joi.object({
