@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import sessionModel from '../models/Session';
+import sessionModel from '../models/session';
 
 class SessionController {
 

@@ -1,9 +1,17 @@
-const connection = require('../database/connection');
-const generateUniqueId = require('../utils/generateUniqueId');
+import connection from '../database/connection';
+import generateUniqueId from '../utils/generateUniqueId';
+
+interface ongCreate {
+  name: string;
+  email: string;
+  whatsapp: string;
+  city: string;
+  uf: string;
+}
 
 class Ong {
 
-  async create(data) {
+  async create(data: ongCreate) {
 
     const { name, email, whatsapp, city, uf } = data;
     const id = generateUniqueId();
@@ -27,4 +35,4 @@ class Ong {
   }
 }
 
-module.exports = new Ong();
+export default new Ong();

@@ -1,11 +1,11 @@
-import {Request, Response} from 'express';
+import { Request, Response } from 'express';
 import incidentModel from '../models/Incident';
 
 class IncidentController {
 
   async store(req: Request, res: Response) {
     const data = req.body;
-    const ong_id = req.headers.authorization;
+    const ong_id = String(req.headers.authorization);
 
     const id = await incidentModel.create(ong_id, data);
 

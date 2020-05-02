@@ -1,8 +1,8 @@
-const connection = require('../database/connection');
+import connection from '../database/connection';
 
 class Profile {
 
-  async index(ong_id) {
+  async index(ong_id: string) {
 
     const incidents = await connection('incidents')
       .where('ong_id', ong_id)
@@ -12,4 +12,4 @@ class Profile {
   }
 }
 
-module.exports = new Profile();
+export default new Profile();

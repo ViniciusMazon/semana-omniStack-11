@@ -1,8 +1,8 @@
-const connection = require('../database/connection');
+import connection from '../database/connection';
 
 class Session {
 
-  async create(id) {
+  async create(id: string) {
 
     const ong = await connection('ongs')
       .where('id', id)
@@ -14,4 +14,4 @@ class Session {
 
 }
 
-module.exports = new Session();
+export default new Session();

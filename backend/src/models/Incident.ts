@@ -1,8 +1,14 @@
-const connection = require('../database/connection');
+import connection from '../database/connection';
+
+interface incidentCreate {
+  title: string;
+  description: string;
+  value: number;
+}
 
 class Incident {
 
-  async create(ong_id, data) {
+  async create(ong_id: string, data: incidentCreate) {
 
     const { title, description, value } = data;
 
@@ -37,7 +43,7 @@ class Incident {
     return { incidents, count }
   }
 
-  async show(id) {
+  async show(id: string) {
     const incident = await connection('incidents')
       .where('id', id)
       .select('*')
@@ -46,10 +52,10 @@ class Incident {
     return incident;
   }
 
-  async delete(id) {
+  async delete(id: string) {
     await connection('incidents').where('id', id).delete();
   }
 
 }
 
-module.exports = new Incident()
+export default new Incident();

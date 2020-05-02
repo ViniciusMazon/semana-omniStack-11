@@ -7,7 +7,7 @@ class ProfileController {
 
     const ong_id = req.headers.authorization;
 
-    const incidents = await profileModel.index(ong_id);
+    const incidents = await profileModel.index(String(ong_id));
 
     return res.json(incidents);
   }
