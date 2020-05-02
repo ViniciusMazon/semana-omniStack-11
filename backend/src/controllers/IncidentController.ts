@@ -3,11 +3,11 @@ import incidentModel from '../models/Incident';
 
 class IncidentController {
 
-  async create(req: Request, res: Response) {
+  async store(req: Request, res: Response) {
     const data = req.body;
     const ong_id = req.headers.authorization;
 
-    const id = await incidentModel.store(ong_id, data);
+    const id = await incidentModel.create(ong_id, data);
 
     return res.json({ id })
   }
@@ -22,7 +22,7 @@ class IncidentController {
     return res.json(incidents);
   }
 
-  async delete(req: Request, res: Response) {
+  async destroy(req: Request, res: Response) {
 
     const { id } = req.params;
     const ong_id = req.headers.authorization;
@@ -33,9 +33,7 @@ class IncidentController {
       return res.status(401).json({ error: 'Operation not permitted.' });
     }
 
-
-
-    await incidentModel.destroy(id);
+    await incidentModel.delete(id);
     return res.status(204).send();
   }
 }

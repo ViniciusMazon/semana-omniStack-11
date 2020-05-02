@@ -2,7 +2,7 @@ const connection = require('../database/connection');
 
 class Incident {
 
-  async store(ong_id, data) {
+  async create(ong_id, data) {
 
     const { title, description, value } = data;
 
@@ -46,7 +46,7 @@ class Incident {
     return incident;
   }
 
-  async destroy(id) {
+  async delete(id) {
     await connection('incidents').where('id', id).delete();
   }
 

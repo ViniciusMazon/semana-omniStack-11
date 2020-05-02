@@ -2,7 +2,7 @@ const connection = require('../database/connection');
 
 class Session {
 
-  async store(id) {
+  async create(id) {
 
     const ong = await connection('ongs')
       .where('id', id)

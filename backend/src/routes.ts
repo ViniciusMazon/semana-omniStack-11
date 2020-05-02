@@ -13,7 +13,7 @@ routes.post('/sessions', celebrate({
   [Segments.BODY]: Joi.object().keys({
     id: Joi.string().required()
   })
-}), session.create);
+}), session.store);
 
 routes.post('/ongs', celebrate({
   [Segments.BODY]: Joi.object().keys({
@@ -35,7 +35,8 @@ routes.post('/incidents', celebrate({
     description: Joi.string().required(),
     value: Joi.number().required().positive()
   })
-}), incident.create);
+}), incident.store);
+
 routes.get('/incidents', celebrate({
   [Segments.QUERY]: Joi.object().keys({
     page: Joi.number()
@@ -49,7 +50,7 @@ routes.delete('/incidents/:id', celebrate({
   [Segments.PARAMS]: Joi.object().keys({
     id: Joi.number().required()
   })
-}), incident.delete);
+}), incident.destroy);
 
 routes.get('/profile', celebrate({
   [Segments.HEADERS]: Joi.object({

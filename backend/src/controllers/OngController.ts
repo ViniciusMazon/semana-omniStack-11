@@ -6,7 +6,7 @@ class OngController {
   async store(req: Request, res: Response) {
     const data = req.body;
 
-    const id = await ongModel.store(data);
+    const id = await ongModel.create(data);
 
     res.json({ id });
   }

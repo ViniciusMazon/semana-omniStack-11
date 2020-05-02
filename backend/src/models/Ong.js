@@ -3,7 +3,7 @@ const generateUniqueId = require('../utils/generateUniqueId');
 
 class Ong {
 
-  async store(data) {
+  async create(data) {
 
     const { name, email, whatsapp, city, uf } = data;
     const id = generateUniqueId();
