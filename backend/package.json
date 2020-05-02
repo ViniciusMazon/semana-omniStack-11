@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./src/server.js",
     "dev": "ts-node-dev --respawn --transpileOnly ./src/server.ts",
-    "test": "cross-env NODE_ENV=test jest"
+    "test": "cross-env NODE_ENV=test jest --no-cache"
   },
   "dependencies": {
     "celebrate": "^12.1.0",

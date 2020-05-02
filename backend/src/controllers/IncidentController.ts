@@ -14,9 +14,9 @@ class IncidentController {
 
   async index(req: Request, res: Response) {
 
-    const { page = 1 } = req.query;
+    const page = req.query.page || 1;
 
-    const { incidents, count } = await incidentModel.index(page);
+    const { incidents, count } = await incidentModel.index(String(page));
 
     res.header('X-Total-Count', count['count(*)']);
     return res.json(incidents);
