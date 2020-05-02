@@ -1,6 +1,6 @@
-const request = require('supertest');
-const app = require('../../src/app');
-const connection = require('../../src/database/connection');
+import request from 'supertest';
+import app from '../../src/app';
+import connection from '../../src/database/connection';
 
 describe('Session', () => {
 
