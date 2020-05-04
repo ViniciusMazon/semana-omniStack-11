@@ -1,5 +1,5 @@
 // Update with your config settings.
-export default {
+module.exports = {
 
   development: {
     client: 'sqlite3',
@@ -8,6 +8,8 @@ export default {
     },
     migrations: {
       directory: './src/database/migrations'
+    }, seeds: {
+      directory: './src/database/seeds'
     },
     useNullAsDefault: true
   },
@@ -19,6 +21,8 @@ export default {
     },
     migrations: {
       directory: './src/database/migrations'
+    }, seeds: {
+      directory: './src/database/seeds'
     },
     useNullAsDefault: true
   },

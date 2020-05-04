@@ -1,26 +1,25 @@
 import request from 'supertest';
 import app from '../../src/app';
+import connection from '../../src/database/connection';
 
 describe('Incident', () => {
 
+  beforeEach(async () => {
+    await connection.migrate.rollback();
+    await connection.migrate.latest();
+    await connection.seed.run();
+  });
+
+  afterAll(async () => {
+    await connection.destroy();
+  });
+
   it('should must add a new case', async () => {
-
-    const newOng = await request(app)
-      .post('/ongs')
-      .send({
-        name: "APAD",
-        email: "contato@apad.com.br",
-        whatsapp: "4700000000",
-        city: "Rio do Sul",
-        uf: "SC"
-      });
-
-    const ongId = newOng.body.id;
 
     const response = await request(app)
       .post('/incidents')
       .set({
-        Authorization: ongId
+        Authorization: 1
       })
       .send({
         title: "Caso Cadelinha11",
@@ -41,35 +40,10 @@ describe('Incident', () => {
 
   it('should exclude a case', async () => {
 
-    const newOng = await request(app)
-      .post('/ongs')
-      .send({
-        name: "APAD",
-        email: "contato@apad.com.br",
-        whatsapp: "4700000000",
-        city: "Rio do Sul",
-        uf: "SC"
-      });
-
-    const ongId = newOng.body.id;
-
-    const newIncident = await request(app)
-      .post('/incidents')
-      .set({
-        Authorization: ongId
-      })
-      .send({
-        title: "Caso Cadelinha11",
-        description: "Cadelinha está bem",
-        value: 150
-      });
-
-    const incidentId = newIncident.body.id;
-
     const response = await request(app)
-      .delete(`/incidents/${incidentId}`)
+      .delete('/incidents/1')
       .set({
-        Authorization: ongId
+        authorization: 1,
       });
 
     expect(response.status).toEqual(204);
