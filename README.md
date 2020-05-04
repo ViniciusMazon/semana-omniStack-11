@@ -48,7 +48,12 @@ Desenvolvido durante a **Semana OmniStack 11.0**, créditos a [Rocketseat 🚀
 
 # 🧪 Minhas alterações
 
-...
+- Backend
+  - Criação dos controllers e models
+  - Adição do Typescript
+  - Adição de seeds para teste
+  - Criação de testes de integração
+
 
 
 
